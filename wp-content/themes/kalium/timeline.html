@@ -1,0 +1,95 @@
+<style type="text/css">
+	ul#timeline-custom{
+		display: block;
+		width: 100%;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+	ul#timeline-custom:before{
+		content: "";
+		display: block;
+		width: 4px;
+		height: auto;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin: 0 0 0 -2px;
+		bottom: 0;
+		background-color: red;
+	}
+	ul#timeline-custom li{
+		display: block;
+		width: 100%;
+		height: auto;
+		margin: 30px 0;
+		box-sizing: border-box;
+	}
+	ul#timeline-custom li:nth-child(odd){
+		padding: 0 0 0 50%;
+	}
+	ul#timeline-custom li:nth-child(even){
+		padding: 0 50% 0 0;
+		text-align: right;
+	}
+	.content-timeline{
+		display: block;
+		width: 100%;
+		height: auto;
+		box-sizing: border-box;
+	}
+	ul#timeline-custom li:nth-child(odd) .content-timeline{
+		padding: 0 0 0 40px;
+	}
+	ul#timeline-custom li:nth-child(even) .content-timeline{
+		padding: 0 40px 0 0;
+	}
+</style>
+
+<div class="container">
+	<ul id="timeline-custom">
+		<li>
+			<div class="content-timeline">
+				2015 <br />
+				Créatif/Chargée de projets culturels/ Chargée de com - Mille au carré - Rennes
+			</div>
+		</li>
+		<li>
+			<div class="content-timeline">
+				2014 <br />
+				Service civique - Mille au carré - Rennes
+			</div>
+		</li>
+		<li>
+			<div class="content-timeline">
+				2013 <br />
+				Co-Création de l'association Mille au carré
+			</div>
+		</li>
+		<li>
+			<div class="content-timeline">
+				2013 <br />
+				Stage Communication - Ay-roop - Rennes
+			</div>
+		</li>
+		<li>
+			<div class="content-timeline">
+				2013 <br />
+				Stage Communication - Le Triangle, cité de la danse - Rennes
+			</div>
+		</li>
+		<li>
+			<div class="content-timeline">
+				2013 <br />
+				Master 2 Créateur de Produit multimédia et management - Université Rennes 2
+			</div>
+		</li>
+		<li>
+			<div class="content-timeline">
+				2011<br />
+				DNAP Ecole supérieure d'arts et média de Caen
+			</div>
+		</li>
+		
+	</ul>
+</div>
