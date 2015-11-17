@@ -46,7 +46,7 @@ if( function_exists( 'is_woocommerce' ) )
 	<?php if($loop->have_posts()) : ?>
 		<ul id="timeline-custom">
 			<?php while($loop->have_posts()) : $loop->the_post(); ?>
-			<li>
+			<li data-sr>
 				<div class="content-timeline">
 					<div class="wrapper-bloc-timeline">
 						<div class="header-bloc-timeline">
@@ -106,6 +106,21 @@ if( function_exists( 'is_woocommerce' ) )
 		</ul>
 	<?php endif; wp_reset_query(); ?>
 </div>
+
 <?php
 
 get_footer();
+
+echo "<script> 
+	var config = {
+		easing: 'hustle',
+		move: '10px',
+		over: '0.3s',
+	    scale: { direction: 'up', power: '0%' },
+	    reset: true,
+	    vFactor: '0.50',
+	    wait: '0.5s',
+	    delay: 'onload'
+	}
+	window.sr = new scrollReveal( config );
+</script>";

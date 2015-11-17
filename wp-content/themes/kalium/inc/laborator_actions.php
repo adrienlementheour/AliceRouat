@@ -35,6 +35,8 @@ function laborator_init() {
 	wp_register_script( 'bootstrap', THEMEASSETS . 'js/bootstrap.min.js', null, null, true );
 	wp_register_script( 'modernizr', THEMEASSETS . 'js/modernizr.custom.js', null, null, true );
 	wp_register_script( 'tweenmax', THEMEASSETS . 'js/TweenMax.min.js', null, null, true );
+	wp_register_script( 'scrollReveal', THEMEASSETS . 'js/scrollReveal.min.js', null, null, true );
+	wp_register_script( 'script', THEMEASSETS . 'js/script.js', null, null, true );
 	wp_register_script( 'joinable', THEMEASSETS . 'js/joinable.min.js', null, null, true );
 	wp_register_script( 'kalium-custom', THEMEASSETS . 'js/kalium-custom.min.js', null, $theme_version, true );
 
@@ -85,7 +87,7 @@ function laborator_wp_enqueue_scripts() {
 	wp_enqueue_style( array( 'bootstrap', 'kalium-main', 'font-awesome', 'font-flaticons', 'font-lineaicons', 'style' ) );
 
 	// Scripts
-	wp_enqueue_script( array( 'jquery', 'bootstrap', 'tweenmax', 'modernizr', 'joinable', 'isotope', 'packery' ) );
+	wp_enqueue_script( array( 'jquery', 'bootstrap', 'tweenmax', 'scrollReveal', 'modernizr', 'joinable', 'isotope', 'packery' ) );
 
 	// Custom Skin
 	if ( get_data( 'use_custom_skin' ) ) {
