@@ -20,3 +20,97 @@
   padding: 0;
   font-size: 18px;
 }
+.page-template-timeline .default-margin {
+  margin-bottom: 0;
+}
+.page-template-timeline ul#timeline-custom {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0 0 70px 0;
+}
+.page-template-timeline ul#timeline-custom:before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -2px;
+  bottom: 0;
+  background-color: #00b19e;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.page-template-timeline ul#timeline-custom > li {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+  box-sizing: border-box;
+}
+.page-template-timeline ul#timeline-custom > li:nth-child(odd) {
+  padding: 0 0 0 50%;
+}
+.page-template-timeline ul#timeline-custom > li:nth-child(odd) .content-timeline {
+  padding: 0 0 0 40px;
+}
+.page-template-timeline ul#timeline-custom > li:nth-child(odd) .content-timeline:before {
+  left: -8px;
+}
+.page-template-timeline ul#timeline-custom > li:nth-child(even) {
+  padding: 0 50% 0 0;
+  text-align: right;
+}
+.page-template-timeline ul#timeline-custom > li:nth-child(even) .content-timeline {
+  padding: 0 40px 0 0;
+}
+.page-template-timeline ul#timeline-custom > li:nth-child(even) .content-timeline:before {
+  right: -8px;
+}
+.page-template-timeline .content-timeline {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.page-template-timeline .content-timeline:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #00b19e;
+  position: absolute;
+  top: 23px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.page-template-timeline .wrapper-bloc-timeline {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.page-template-timeline .header-bloc-timeline {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  background-color: #00b19e;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.page-template-timeline .content-bloc-timeline {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 30px 20px;
+  font-size: 16px;
+}

@@ -48,8 +48,14 @@ if( function_exists( 'is_woocommerce' ) )
 			<?php while($loop->have_posts()) : $loop->the_post(); ?>
 			<li>
 				<div class="content-timeline">
-					<?php the_field('annee'); ?><br />
-					<?php the_field('diplome'); ?>
+					<div class="wrapper-bloc-timeline">
+						<div class="header-bloc-timeline">
+							<?php the_field('annee'); ?>
+						</div>
+						<div class="content-bloc-timeline">
+							<?php the_field('diplome'); ?>
+						</div>
+					</div>
 				</div>
 			</li>
 			<?php endwhile; ?>
