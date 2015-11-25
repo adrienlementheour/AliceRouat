@@ -87,7 +87,7 @@ function laborator_wp_enqueue_scripts() {
 	wp_enqueue_style( array( 'bootstrap', 'kalium-main', 'font-awesome', 'font-flaticons', 'font-lineaicons', 'style' ) );
 
 	// Scripts
-	wp_enqueue_script( array( 'jquery', 'bootstrap', 'tweenmax', 'scrollReveal', 'modernizr', 'joinable', 'isotope', 'packery' ) );
+	wp_enqueue_script( array( 'jquery', 'bootstrap', 'tweenmax', 'scrollReveal', 'script', 'modernizr', 'joinable', 'isotope', 'packery' ) );
 
 	// Custom Skin
 	if ( get_data( 'use_custom_skin' ) ) {

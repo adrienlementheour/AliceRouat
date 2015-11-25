@@ -114,3 +114,12 @@
   padding: 30px 20px;
   font-size: 16px;
 }
+#cat {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+  opacity: 0;
+}
