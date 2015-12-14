@@ -138,5 +138,8 @@
   opacity: 0;
 }
 .single-portfolio-holder .title h1 {
-  font-size: 50px;
+  font-size: 40px;
+}
+.single-portfolio-holder .details .project-description p {
+  font-size: 17px;
 }
