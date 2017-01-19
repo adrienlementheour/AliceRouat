@@ -24,7 +24,11 @@ $main_menu_type = get_data('main_menu_type');
 <body <?php body_class(); ?>>
 
 	<div id="cat">
-		<img src="<?php echo get_template_directory_uri(); ?>/img/cat.jpg">
+
+		<!--<img src="<?php //echo get_template_directory_uri(); ?>/img/cat.jpg">
+		<img src="<?php //echo get_stylesheet_directory(); ?>/img/cat.jpg">-->
+		<img src="http://www.alicerouat.com/wp-content/themes/kalium-child/img/cat.jpg">
+		
 	</div>
 
 	<?php

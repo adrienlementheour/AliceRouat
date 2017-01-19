@@ -11,6 +11,10 @@ add_action( 'wp_enqueue_scripts', 'enqueue_childtheme_scripts', 100 );
 
 function enqueue_childtheme_scripts() {
 	wp_enqueue_style( 'kalium-child', get_stylesheet_directory_uri() . '/style.css' );
+	wp_enqueue_script( 'kalium-child-modernizr', get_stylesheet_directory_uri() . '/assets/js/modernizr.custom.js', array(), null, true );
+	wp_enqueue_script( 'kalium-child-scrollreveal', get_stylesheet_directory_uri() . '/assets/js/scrollReveal.min.js', array(), null, true );
+	wp_enqueue_script( 'kalium-child-tweenmax', get_stylesheet_directory_uri() . '/assets/js/TweenMax.min.js', array(), null, true );
+	wp_enqueue_script( 'kalium-child-scripts', get_stylesheet_directory_uri() . '/assets/js/script.js', array(), null, true );
 }
 
 function create_post_type() { 

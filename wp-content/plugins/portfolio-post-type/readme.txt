@@ -1,9 +1,9 @@
 === Portfolio Post Type ===
-Contributors: downstairsdev, garyj
+Contributors: downstairsdev, GaryJ
 Tags: portfolio, post type
 Requires at least: 3.7
-Tested up to: 4.3
-Stable tag: 0.9.1
+Tested up to: 4.5.2
+Stable tag: 0.9.3
 License: GPLv2 or later
 
 == Description ==
@@ -32,6 +32,15 @@ Of course: [https://github.com/devinsays/portfolio-post-type](https://github.com
 
 == Changelog ==
 
+= 0.9.3 =
+
+* Fix notice in dashboard when used with PHP7
+* Fix notice on specific screens when $screen variable not available
+
+= 0.9.2 =
+
+* Update post type messages for WordPress 4.4
+
 = 0.9.1 =
 
 * Updated translation file
@@ -45,7 +54,7 @@ Of course: [https://github.com/devinsays/portfolio-post-type](https://github.com
 = 0.8.2 =
 
 * Updated .pot file for translations
-* Portuguese translation by Pedro Mendonça
+* Portuguese translation by Pedro MendonÃ§a
 
 = 0.8.1 =
 
